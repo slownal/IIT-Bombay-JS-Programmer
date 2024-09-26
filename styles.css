@@ -1,0 +1,94 @@
+/* General styling */
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Align title to the left */
+h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  /* color: #2d2d2d; */
+  /*text-align: left;*/ /* Ensure title is left-aligned */
+}
+
+/* Toolbar styling */
+.toolbar {
+  display: flex;
+  justify-content: space-between; /* Align icons to the right */
+  /* gap: 10px; */
+  align-items:center ;
+  margin-bottom: 10px;
+}
+
+/* Toolbar buttons */
+.toolbar button {
+  background-color: transparent;
+  border: none; /* Removed the border */
+  padding: 8px 12px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.toolbar button:hover {
+  background-color: #eee; /* Subtle hover effect without a box */
+}
+
+/* Table styling */
+.chemical-table {
+  width: 100%;
+  border-collapse: collapse; /* Ensure borders collapse */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-top: 10px; /* Optional: Add space above the table */
+}
+
+/* Increase the padding for the table header */
+.chemical-table thead th {
+  border-bottom: 1px solid #333; /* Bottom border for header */
+  padding: 30px; /* Increase vertical padding for a broader look */
+}
+
+.chemical-table th, .chemical-table td {
+  padding: 8px; /* Default padding for other cells */
+  text-align: left;
+  font-size: 14px;
+}
+
+.chemical-table input[type="text"] {
+  width: 100px;
+  padding: 5px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+}
+
+
+/* Lighter pale yellow background for the header */
+.chemical-table thead {
+  background-color: #edede7; /* Lighter pale yellow */
+}
+
+.chemical-table tbody tr:hover {
+  background-color: #f9f9f9; /* Hover effect for table rows */
+}
+
+.chemical-table tbody tr td:first-child {
+  text-align: center;
+  color: #2d2d2d;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Checkmark styling */
+.checkmark img.check-icon {
+  width: 18px;
+  height: 18px;
+}
